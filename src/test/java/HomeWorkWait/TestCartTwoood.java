@@ -65,7 +65,7 @@ public class TestCartTwoood extends TestInit {
     }
 
     public void clickTakeOut() {
-        explicitWait("//input[@ng-click=\"trackMenuFilterDeliveryOrTakeoutClick('Takeout')\"]").click();
+        explicitWait("//input[@ng-click='trackMenuFilterDeliveryOrTakeoutClick('Takeout')']").click();
     }
 
     public void chooseTypeFood() {
