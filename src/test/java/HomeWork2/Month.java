@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class Month {
     @Test
     public void check() {
-       int x = 12;
+       int x = 0;
             if (x == 1 || x==3 || x==5 || x==7 || x==8 || x==10 || x==12) {
                 System.out.println("In this month is 31 days");
             }
