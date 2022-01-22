@@ -58,7 +58,46 @@ public class TestInit {
     }
 
     public void closeCookiesWarning() {
-        driver.findElement(By.xpath("//button[contains(text(), 'Got it')]")).click();
+        explicitWaitVisible("//button[contains(text(), 'Got it')]").click();
+    }
+    public void checkResultDel() {
+        waitForSomeTime(2);
+        explicitWait("//span[contains(text(), '$0.00')]").isDisplayed();
+    }
+
+    public void delWithCart() {
+        explicitWait("//a[@id=\"remove-item\"]").click();
+    }
+
+    public void addToCart() {
+        explicitWait("//span[contains(text(), 'Add to Cart')]").click();
+    }
+
+    public void clickAdd() {
+        explicitWait("//button[@title=\"Add copy of this item\"][@id=\"quantity--adds\"]").click();
+    }
+
+    public void choseFood() {
+        explicitWait("//span[contains(text(), 'BBQ Spare Ribs (4)')]").click();
+    }
+
+    public void chooseRestaurant() {
+        explicitWait("//a[contains(text(), 'Happy Dragon')]").click();
+    }
+
+    public void clickTakeOut() {
+        explicitWait("//input[@id=\"filters-checkbox-takeout\"]").click();
+    }
+
+    public void chooseTypeFood() {
+        explicitWait("//button[contains(text(), 'View all Asian Food options')]").click();
+    }
+
+    public void chooseCity() {
+        explicitWait("//a[contains(text(), 'San Antonio, TX')]").click();
+    }
+    public void checkResultSumma() {
+        explicitWaitVisible("//strong[contains(text(), '$21.75')]");
     }
 
 

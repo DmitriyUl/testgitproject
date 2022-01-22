@@ -5,7 +5,7 @@ public class AutoOne {
         AutoGruz gruz = new AutoGruz();
         gruz.setNameDriver("Dima");
         gruz.setNumberAuto("06688KK");
-        gruz.setWeightGruz(0);
+        gruz.setWeightGruz(1500);
         if (gruz.getNameDriver().isEmpty()){
             System.out.println("Enter name");
         }else
