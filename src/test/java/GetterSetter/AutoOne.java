@@ -3,10 +3,12 @@ package GetterSetter;
 public class AutoOne {
     public static void main(String[] arg) {
         AutoGruz gruz = new AutoGruz();
-        gruz.setNameDriver("Vova");
-        gruz.setNumberAuto("AA3333AA");
-        gruz.setWeightGruz(35000);
-        gruz.print();
+        gruz.setNameDriver("Dima");
+        gruz.setNumberAuto("06688KK");
+        gruz.setWeightGruz(1500);
+        System.out.println(gruz.getNameDriver());
+        System.out.println(gruz.getNumberAuto());
+        System.out.println(gruz.getWeightGruz());
     }
 }
 
@@ -40,8 +42,7 @@ class AutoGruz {
     public void setWeightGruz(int kg) {
         if (kg <= 0) {
             System.out.println("enter valid data");
-        }
-        if (kg >= 0) {
+        } else {
             weightGruz = kg;
         }
     }
@@ -50,12 +51,6 @@ class AutoGruz {
         return weightGruz;
     }
 
-    void print() {
-        System.out.println(nameDriver);
-        System.out.println(numberAuto);
-        System.out.println(weightGruz);
-
-    }
 
 }
 
