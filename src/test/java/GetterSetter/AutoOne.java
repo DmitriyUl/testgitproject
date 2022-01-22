@@ -50,8 +50,6 @@ class AutoGruz {
     public int getWeightGruz() {
         return weightGruz;
     }
-
-
 }
 
 
