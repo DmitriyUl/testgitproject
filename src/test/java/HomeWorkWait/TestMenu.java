@@ -2,7 +2,7 @@ package HomeWorkWait;
 
 import org.testng.annotations.Test;
 
-public class TestMenu extends TestCartTwoood {
+public class TestMenu extends TestEatStreet {
 
     @Test
     public void testBackMenuButton() {

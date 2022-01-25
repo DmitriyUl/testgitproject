@@ -1,5 +1,8 @@
 package Homework;
 
+import org.testng.annotations.Test;
+
+@Test
 public class Taxi {
     public int hodki;
     public int pasagiry;
